@@ -1,0 +1,72 @@
+TIC TAC TOE
+# Made by Apeksha Mankar
+
+
+Game Flow
+
+1. Game Opening
+
+What Happens:
+- Displays the opening images (TicTacToe_Opening.jfif and TicTacToe_IntialPage.png).
+- After 1 second, the game board is drawn with grid lines for the Tic Tac Toe game.
+- Initializes the game with a black background and grid lines.
+
+Display:
+- The opening images will fade in and then be replaced by a blank board with grid lines.
+
+2. Player Turn
+
+What Happens:
+- Players take turns clicking on the grid to place their mark ('X' or 'O').
+- The game updates the board and checks for a win or draw after each move.
+
+Display:
+- The player's mark ('X' or 'O') is drawn on the grid at the clicked location.
+- The status bar at the bottom of the screen updates to show whose turn it is.
+
+3. Checking for Win or Draw
+
+What Happens:
+- After each move, the game checks if there is a winner or if the game is a draw.
+- If there is a winner, a winning line is drawn and the winner’s mark is highlighted.
+- If the board is full and there is no winner, the game is declared a draw.
+
+Display:
+- A line is drawn across the winning combination.
+- The status bar displays a message indicating the winner or that the game is a draw.
+
+4. End of Game
+
+What Happens:
+- Once the game ends, options are displayed for restarting the game or exiting.
+- Clicking "Again?" restarts the game.
+- Clicking "Exit?" closes the game.
+
+Display:
+- The status area at the bottom of the screen displays the end options: "Again?" and "Exit?".
+
+
+Functions included:
+
+- game_opening()
+Displays the opening images and initializes the game board layout.
+
+- draw_status()
+Displays the current status of the game (whose turn it is, who won, or if it is a draw).
+
+- check_win()
+Checks if there is a winner or if the game is a draw, and updates the game state accordingly.
+
+- drawXO(row, col)
+Draws 'X' or 'O' on the board at the specified row and column.
+
+- userClick()
+Handles the mouse click event to place 'X' or 'O' on the board.
+
+- display_end_options()
+Displays options for restarting or exiting the game when it ends.
+
+- handle_end_of_game(reset_rect, exit_rect)
+Handles user choices for restarting or exiting the game.
+
+
